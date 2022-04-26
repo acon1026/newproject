@@ -12,47 +12,55 @@ public class Student {
 	String pw;
 	String name;
 	String birthday;
+	int ban;
 	
-	public Student() {}
-	public Student(int snumber, String id, String pw, String name, String birthday) {
+	
+	
+	public Student(int snumber, String id, String pw, String name, String birthday, int ban) {
 		super();
 		this.snumber = snumber;
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
 		this.birthday = birthday;
+		this.ban = ban;
 	}
-	@Override
-	public String toString() {
-		return "Student [snumber=" + snumber + ", id=" + id + ", pw=" + pw + ", name=" + name + ", birthday=" + birthday
-				+ "]";
-	}
+
+
+
 	public int getSnumber() {
 		return snumber;
 	}
+
+
+
 	public String getId() {
 		return id;
 	}
+
+
+
 	public String getPw() {
 		return pw;
 	}
+
+
+
 	public String getName() {
 		return name;
 	}
+
+
+
 	public String getBirthday() {
 		return birthday;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
- 
-	
+
+
+
+	public int getBan() {
+		return ban;
+	}
 	
 	
 	

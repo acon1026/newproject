@@ -19,16 +19,16 @@ public class StudentDao {
 	Connection con=null;
 	
 	
-	public void updatePassword(String snumber, String name) {
+	public void updatePassword(String id, String pw) {
 		
 		
 		try {
 			dbCon();
 			
-			String sql = "update student_info set name = ? where snumber = ?";
+			String sql = "update s_info set pw = ? where id = ?";
 			PreparedStatement pst = con.prepareStatement(sql);
-			pst.setString(1, name);
-			pst.setString(2,  snumber);
+			pst.setString(1, pw);
+			pst.setString(2, id);
 			
 			pst.executeUpdate();
 			
@@ -46,20 +46,20 @@ public class StudentDao {
 	
 	
 	
-	public Student getStudent(int snumber) {
+	public Student getStudent(String id) {
 		Student s =null;
 		dbCon();
-		String sql="select * from student_info where snumber =?";
+		String sql="select * from s_info where id =?";
 		PreparedStatement pst;
 		try {
 			pst = con.prepareStatement(sql);
-			pst.setInt(1, snumber);
+			pst.setString(1, id);
 			ResultSet rs = pst.executeQuery();
 			
 			
 			if(rs.next()) {
 				
-				s = new Student(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7));
+				s = new Student(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -76,15 +76,15 @@ public class StudentDao {
 		try {
 			
 			dbCon();
-			String sql="insert into student_info values(?,?,?,?,?,?,?)" ;
+			String sql="insert into s_info values(?,?,?,?,?,?)" ;
 			PreparedStatement pst =con.prepareStatement(sql);
 			pst.setInt(1, s.getSnumber());
-			pst.setString(2, s.getName());
-			pst.setInt(3, s.getKor());
-			pst.setInt(4, s.getEng());
-			pst.setInt(5, s.getMath());
-			pst.setInt(6, s.getTotal());
-			pst.setDouble(7, s.getAvg());						
+			pst.setString(2, s.getId());
+			pst.setString(3, s.getPw());
+			pst.setString(4, s.getName());
+			pst.setString(5, s.getBirthday());
+			pst.setInt(6, s.getBan());
+								
 			pst.executeUpdate();
 			
 			pst.close();
@@ -108,11 +108,11 @@ public class StudentDao {
 			 
 			dbCon();
 			Statement st  =con.createStatement();
-			String sql="select * from student_info";
+			String sql="select snumber,id,pw,name,to_char(birthday,'yy-mm-dd'),ban  from S_info";
 			ResultSet rs  =st.executeQuery(sql);
 			
 			while( rs.next()) {
-				Student s = new Student (rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7));
+				Student s = new Student (rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6));
 				list.add(s);
 			}	
 			
@@ -133,7 +133,7 @@ public class StudentDao {
 	
 	
 	
-	private void dbCon() {			
+	 void dbCon() {			
 		try {
 			Class.forName(driver);
 			con =DriverManager.getConnection(url, user, password);						

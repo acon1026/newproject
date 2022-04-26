@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-     <%@ page import="kds.Student" %>
+     <%@ page import="student.Student" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
 <body>
 
 <%
-Student s = (Student)request.getAttribute("student");
+Student s = (Student)request.getAttribute("s");
 
 %>
 
