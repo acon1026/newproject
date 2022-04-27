@@ -12,7 +12,7 @@
 TeacherTable ta = (TeacherTable) request.getAttribute("protable");
 %>
 
-<form method="post" action="/0421/updatePtable">
+<form method="post" action="/project/updatePtable">
 <table>
 <tr><td>primary key</td><td><input type="text" name="pnumber" value="<%=ta.getpnumber()%>" readonly></td></tr>
 <tr><td>아이디</td><td><input type="text" name="p_id" value="<%=ta.getp_id()%>"  readonly></td></tr>
