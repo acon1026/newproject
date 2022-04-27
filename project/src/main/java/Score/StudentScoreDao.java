@@ -16,6 +16,13 @@ public class StudentScoreDao {
 	
 Connection con =null;
 	
+public static void main(String[] args){
+	StudentScoreDao dao = new StudentScoreDao();
+	dao.dbCon();
+	
+}
+
+
 	public void dbCon() {
 		try {
 			Class.forName(driver);
@@ -112,7 +119,7 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 	
 	try {
 		dbCon();
-		String sql="update from Score_inifo set snumber=?,kor=?,eng=?,math=? where score_num=?";
+		String sql="update Score_info set snumber=?,kor=?,eng=?,math=? where score_num=?";
 		
 		PreparedStatement pst = con.prepareStatement(sql);
 		pst.setInt(1, snumber);

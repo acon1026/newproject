@@ -14,9 +14,9 @@
 <table>
 <tr><td>score_num</td><td><input type="text" name="score_num" value="<%=ss.getScore_num()%>" readonly></td></tr>
 <tr><td>snumber</td><td><input type="text" name="snumber" value="<%=ss.getSnumber()%>" readonly></td></tr>
-<tr><td>국어</td><td><input type="text" name="kor" value="<%=ss.getKor()%>"  placeholder ="숫자만 입력해주세요"></td></tr>
-<tr><td>영어</td><td><input type="text" name="eng" value="<%=ss.getEng()%>" placeholder ="숫자만 입력해주세요"></td></tr>
-<tr><td>수학</td><td><input type="text" name="math" value="<%=ss.getMath()%>" placeholder ="숫자만 입력해주세요"></td></tr>
+<tr><td>국어</td><td><input type="text" name="kor" value="<%=ss.getKor()%>"  ></td></tr>
+<tr><td>영어</td><td><input type="text" name="eng" value="<%=ss.getEng()%>" ></td></tr>
+<tr><td>수학</td><td><input type="text" name="math" value="<%=ss.getMath()%>" ></td></tr>
 <tr><td>합계</td><td><input type="text" name="math" value="<%=ss.getTotal()%>" readonly></td></tr>
 <tr><td>평균</td><td><input type="text" name="math" value="<%=ss.getAvg()%>" readonly></td></tr>
 

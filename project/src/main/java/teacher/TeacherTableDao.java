@@ -132,7 +132,7 @@ public void inserttable(TeacherTable t) {
 		
 		try {
 			dbCon();
-			String sql="update from Pro_inifo set p_pw=?,p_name=?,class=?,ban=? where pnumber=?";
+			String sql="update Pro_info set p_pw=?,p_name=?,class=?,ban=? where pnumber=?";
 			
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setString(1, p_pw);

@@ -9,17 +9,17 @@
 </head>
 <body>
 <%
-TeacherTable ta = (TeacherTable) request.getAttribute("Ptable");
+TeacherTable ta = (TeacherTable) request.getAttribute("protable");
 %>
 
-<form method="post" action="/project/updatePtable">
+<form method="post" action="/0421/updatePtable">
 <table>
 <tr><td>primary key</td><td><input type="text" name="pnumber" value="<%=ta.getpnumber()%>" readonly></td></tr>
-<tr><td>생일</td><td><input type="text" name="p_id" value="<%=ta.getp_id()%>"  readonly></td></tr>
-<tr><td>생일</td><td><input type="text" name="p_pw" value="<%=ta.getp_pw()%>" ></td></tr>
-<tr><td>전화번호</td><td><input type="text" name="p_name" value="<%=ta.getp_name()%>" ></td></tr>
-<tr><td>취미</td><td><input type="text" name="main" value="<%=ta.getMain()%>" ></td></tr>
-<tr><td>성별</td><td><input type="text" name="ban" value="<%=ta.getBan()%>" ></td></tr>
+<tr><td>아이디</td><td><input type="text" name="p_id" value="<%=ta.getp_id()%>"  readonly></td></tr>
+<tr><td>비밀번호</td><td><input type="text" name="p_pw" value="<%=ta.getp_pw()%>" ></td></tr>
+<tr><td>이름</td><td><input type="text" name="p_name" value="<%=ta.getp_name()%>" ></td></tr>
+<tr><td>과목</td><td><input type="text" name="main" value="<%=ta.getMain()%>" ></td></tr>
+<tr><td>반</td><td><input type="text" name="ban" value="<%=ta.getBan()%>" ></td></tr>
 <tr><td><button>수정</button></td></tr>
 
 </table>
