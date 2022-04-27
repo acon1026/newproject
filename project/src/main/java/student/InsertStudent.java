@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/insertStudent.20")
+@WebServlet("/insertStudent.27")
 public class InsertStudent  extends HttpServlet{
 
 
@@ -24,7 +24,7 @@ public class InsertStudent  extends HttpServlet{
 		String id = request.getParameter("id");
 		String pw =request.getParameter("pw");
 		String name=request.getParameter("name");
-		String birthday=request.getParameter("birthday");
+		String birthday=request.getParameter("year+month+day");
 		int ban = Integer.parseInt(request.getParameter("ban"));
 		
 		
