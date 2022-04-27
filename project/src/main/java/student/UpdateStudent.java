@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/updateStudent.20_")
+@WebServlet("/updateStudent.27")
 public class UpdateStudent extends HttpServlet {
 	
 	@Override
@@ -25,7 +25,7 @@ public class UpdateStudent extends HttpServlet {
 		
 		dao.updatePassword(id, pw);
 		
-		resp.sendRedirect("confirm.jsp");
+		resp.sendRedirect("kds-view/confirm.jsp");
 		
 		
 		
