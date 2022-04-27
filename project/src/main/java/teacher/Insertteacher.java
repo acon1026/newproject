@@ -20,8 +20,8 @@ public class Insertteacher extends HttpServlet{
 		String pnumber = "5";
 		String p_id = "eeee";
 		String p_pw = "5555";
-		String p_name ="À¯Àç¼®";
-		String main ="»çÈ¸";
+		String p_name ="ï¿½ï¿½ï¿½ç¼®";
+		String main ="ï¿½ï¿½È¸";
 		String ban  ="5";
 		
 		TeacherTable ta =new TeacherTable(pnumber, p_id, p_pw, p_name, main, ban);
@@ -44,14 +44,14 @@ public class Insertteacher extends HttpServlet{
 		String p_id = req.getParameter("p_id");
 		String p_pw = req.getParameter("p_pw");
 		String p_name =req.getParameter("p_name");
-		String main =req.getParameter("main");
+		String main =req.getParameter("class");
 		String ban =req.getParameter("ban");
 		
 		TeacherTable ta =new TeacherTable(pnumber, p_id, p_pw, p_name, main, ban);
 		TeacherTableDao dao = new TeacherTableDao();
 		dao.inserttable(ta);
 		
-		resp.sendRedirect("viewP/viewPinsert.jsp");
+		resp.sendRedirect("kds-view/confirm.jsp");
 	
 	}
 
