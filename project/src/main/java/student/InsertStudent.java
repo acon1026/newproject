@@ -20,11 +20,20 @@ public class InsertStudent  extends HttpServlet{
 		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;utf-8");
 		
+		String year =  request.getParameter("year");
+		String month =request.getParameter("month");
+		String day = request.getParameter("day");
+		String result = year+month+day;
+		System.out.println(result);
+		
+		
+		
 		int snumber= Integer.parseInt(request.getParameter("snumber"));
 		String id = request.getParameter("id");
 		String pw =request.getParameter("pw");
 		String name=request.getParameter("name");
-		String birthday=request.getParameter("year+month+day");
+		String birthday=result;
+		
 		int ban = Integer.parseInt(request.getParameter("ban"));
 		
 		
