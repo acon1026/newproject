@@ -44,19 +44,19 @@ public class Login extends HttpServlet{
 		for(int i=0; i<list.size(); i++) {
 			//out.print(list.get(i).getp_name());
 			if(list.get(i).getp_id().equals(id) ) {
-				//out.print("id ºñ±³¼º°ø");
+				//out.print("id ì„±ê³µ");
 				if(list.get(i).getp_pw().equals( session.getAttribute("pw"))) {
 					TeacherTable p = dao.tablemember2(id);
 					req.setAttribute("protable", p);
 					req.getRequestDispatcher("html/p_main.html").forward(req, resp);
 				}else {
-					out.print("<script>alert('ºñ¹Ğ¹øÈ£¸¦ Æ²¸®¼Ì½À´Ï´Ù.')</script>");
+					out.print("<script>alert('ë¹„ë°€ë²ˆí˜¸ ì˜¤ë¥˜.')</script>");
 					req.getRequestDispatcher("html/login.html").forward(req, resp);
 				}
 			}
 			
 		}
-		out.print("<script>alert('¾ÆÀÌµğ¸¦ Æ²¸®¼Ì½À´Ï´Ù.')</script>");
+		out.print("<script>alert('ì•„ì´ë””ì˜¤ë¥˜.')</script>");
 		req.getRequestDispatcher("html/login.html").forward(req, resp);
 	
 	}

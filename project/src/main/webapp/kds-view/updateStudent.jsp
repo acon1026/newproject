@@ -21,7 +21,7 @@
 <td><input type="text" name="id" value=""></td>
 </tr>
 <tr>
-<td>이름</td>
+<td>패스워드</td>
 <td><input type="text" name="pw" value=""></td>
 </tr>
 <tr>
