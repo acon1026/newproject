@@ -95,12 +95,15 @@ public ArrayList<StudentScore> table(){
 		Statement st = null;
 		st = con.createStatement();
 		
-		String sql="select * from Score_info order by score_num";
+		String sql="select score_num 점수번호 , snumber 학생번호 , kor 국어 , eng 영어 , math 수학 , total 총점 , avg 평균\r\n"
+				+ "       , rank() over (order by total desc) 석차\r\n"
+				+ "       from score_info\r\n"
+				+ "       order by total desc";
 		ResultSet rs = st.executeQuery(sql);
 		
 		while( rs.next()) {
 			StudentScore s = new StudentScore (rs.getString(1) , rs.getInt(2) , rs.getInt(3) , 
-					rs.getInt(4), rs.getInt(5), rs.getInt(6),rs.getDouble(7));
+					rs.getInt(4), rs.getInt(5), rs.getInt(6),rs.getDouble(7),rs.getString(8));
 			list.add(s);
 		}	
 		rs.close();
@@ -134,6 +137,29 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+	}
+	
+	public StudentScore Stablemember(String score_num) {
+		StudentScore s =null;
+		
+		try {
+			dbCon();
+			String sql="select * from Score_info where score_num=?";
+			PreparedStatement pst;
+			pst = con.prepareStatement(sql);
+			pst.setString(1, score_num);
+			ResultSet rs=pst.executeQuery();
+			if(rs.next()) {
+				  ss=new StudentScore(rs.getString(1),rs.getInt(2),rs.getInt(3),rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7));
+				}
+			rs.close();
+			pst.close();
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return ss;
 	}
 	
 	

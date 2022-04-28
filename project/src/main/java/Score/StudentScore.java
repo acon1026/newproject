@@ -8,7 +8,7 @@ public class StudentScore {
 	int math=0;
 	int total =0;
 	double avg =0;
-	
+	String rank ;
 	
 	
 	public StudentScore(String score_num, int snumber, int kor, int eng, int math, int total, double avg) {
@@ -31,15 +31,16 @@ public class StudentScore {
 		this.total =this.kor+this.eng+this.math;
 		this.avg= this.total/3.0;
 	}
-	public StudentScore(String score_num, int snumber, int kor, int eng, int math, int rank) {
+	public StudentScore(String score_num, int snumber, int kor, int eng, int math, int total, double avg, String rank) {
 		super();
 		this.score_num = score_num;
 		this.snumber = snumber;
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
-		this.total =this.kor+this.eng+this.math;
-		this.avg= this.total/3.0;
+		this.total = total;
+		this.avg = avg;
+		this.rank=rank;
 	}
 	public String getScore_num() {
 		return score_num;
@@ -62,10 +63,15 @@ public class StudentScore {
 	public double getAvg() {
 		return avg;
 	}
+	
+	
+	public String getRank() {
+		return rank;
+	}
 	@Override
 	public String toString() {
 		return "[snumber= " + snumber + ", kor= " + kor + ", eng= " + eng
-				+ ", math= " + math + ", total= " + total + ", avg= " + avg + "]";
+				+ ", math= " + math + ", total= " + total + ", avg= " + avg + ",rank="+rank+"]";
 	}
 	
 	
