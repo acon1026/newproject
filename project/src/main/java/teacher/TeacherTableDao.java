@@ -11,10 +11,10 @@ import java.util.ArrayList;
 public class TeacherTableDao {
 	String driver="oracle.jdbc.driver.OracleDriver";
 	String url="jdbc:oracle:thin:@localhost:1521:xe";
-	String user="system";
-	String password="1234";
+	String user="scott";
+	String password="tiger";
 	
-	Connection con =null;
+	Connection con = null;
 	
 	public void dbCon() {
 		try {

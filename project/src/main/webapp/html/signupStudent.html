@@ -12,131 +12,112 @@
     </head>
     
     <body>
+    <form name ="frm" method="post" action="/project/insertStudent.27">
+    <table>
         <div class="wrapper">
             <div class="title"><h1 style="font-size: 21px;">학생 회원가입</h1></div>
             <div class="img">
                 <img src="../html/img/logo.png">
             </div>
             <div class="email">
-                <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+                <input id="snumber" type="text" name="snumber" placeholder="학생번호를 입력해주세요">
                 <div id="emailError" class="error"></div>
             </div>
             <div class="name">
-                <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
+                <input id="id"  type="text" name="id" placeholder="아이디를 입력해 주세요.">
                 <div id="nameError" class="error"></div>
             </div>
             <div class="password">
-                <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+                <input id="password" type="password" name="pw" placeholder="비밀번호를 입력해 주세요.">
                 <div id="passwordError" class="error"></div>
             </div>
             <div class="passwordCheck">
-                <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                <input id="passwordCheck" type="text" name="name" placeholder="이름을 입력해 주세요.">
                 <div id="passwordCheckError" class="error"></div>
             </div>
             <div class="class">
-                <select id="class">
+                <select id="class" name="ban">
                     <option selected disabled>반을 선택해주세요.</option>
-                    <option>1반</option>
-                    <option>2반</option>
-                    <option>3반</option>
-                    <option>4반</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
                 </select>
             </div>
             <div class="birthday">
-                <select id="year">
+                <select id="year" name="year">
                     <option selected disabled>생년</option>
-                    <option>1990년</option>
-                    <option>1991년</option>
-                    <option>1992년</option>
-                    <option>1993년</option>
-                    <option>1994년</option>
-                    <option>1995년</option>
-                    <option>1996년</option>
-                    <option>1997년</option>
-                    <option>1998년</option>
-                    <option>1999년</option>
-                    <option>2000년</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
                 </select>
-                <select id="month">
+                <select id="month" name="month">
                     <option selected disabled>월</option>
-                    <option>1월</option>
-                    <option>2월</option>
-                    <option>3월</option>
-                    <option>4월</option>
-                    <option>5월</option>
-                    <option>6월</option>
-                    <option>7월</option>
-                    <option>8월</option>
-                    <option>9월</option>
-                    <option>10월</option>
-                    <option>11월</option>
-                    <option>12월</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
                 </select>
-                <select id="day">
+                <select id="day" name="day">
                     <option selected disabled>일</option>
-                    <option>1일</option>
-                    <option>2일</option>
-                    <option>3일</option>
-                    <option>4일</option>
-                    <option>5일</option>
-                    <option>6일</option>
-                    <option>7일</option>
-                    <option>8일</option>
-                    <option>9일</option>
-                    <option>10일</option>
-                    <option>11일</option>
-                    <option>12일</option>
-                    <option>13일</option>
-                    <option>14일</option>
-                    <option>15일</option>
-                    <option>16일</option>
-                    <option>17일</option>
-                    <option>18일</option>
-                    <option>19일</option>
-                    <option>20일</option>
-                    <option>21일</option>
-                    <option>22일</option>
-                    <option>23일</option>
-                    <option>24일</option>
-                    <option>25일</option>
-                    <option>26일</option>
-                    <option>27일</option>
-                    <option>28일</option>
-                    <option>29일</option>
-                    <option>30일</option>
-                    <option>31일</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
                 </select>
-                <div id="areaError" class="error"></div>
-            <div class="phone">
-                <input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
-                <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
-                <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
-    
-            </div>
-            <div class="auth">
-                <div id="certificationNumber">000000</div>
-                <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
-            </div>
-    
-            <div class="timer">
-                <div id="timeLimit">03:00</div>
-                <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
-            </div>
-           
-            </div>
-             <div class="gender">
-                <input id="gender_man" type="radio" name="gender">남성  
-                <input id="gender_woman" type="radio" name="gender">여성
-                <div id="genderError" class="error"></div>
-            </div>
+                
             <div class="line">
                 <hr>
             </div>
             <div class="signUp">
-                <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+                <button id="signUpButton"  onclick="signUpCheck()">가입하기</button>
             </div>
         </div>
-    
+       </table>
+       </form>
     </body>
     
     </html>
