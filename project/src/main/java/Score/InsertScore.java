@@ -10,27 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/insertScore")
 public class InsertScore extends HttpServlet{
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
-		req.setCharacterEncoding("UTF-8");
-		resp.setCharacterEncoding("UTF-8");
-		resp.setContentType("text/html; charset=UTF-8");
-		
-		String score_num = "5";
-		int snumber=5;
-		int kor=90;
-		int eng=90;
-		int math=90;
-		
-		StudentScore ss =new StudentScore(score_num, snumber, kor, eng, math);
-		StudentScoreDao dao = new StudentScoreDao();
-		dao.inserttable(ss);
-		
-		resp.sendRedirect("viewScore/viewScoreinsert.jsp");
-		
 	
-	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

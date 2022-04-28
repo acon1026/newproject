@@ -11,11 +11,18 @@ import java.util.ArrayList;
 public class StudentScoreDao {
 	String driver="oracle.jdbc.driver.OracleDriver";
 	String url="jdbc:oracle:thin:@localhost:1521:xe";
-	String user="system";
-	String password="1234";
+	String user="scott";
+	String password="tiger";
 	
 Connection con =null;
 	
+public static void main(String[] args){
+	StudentScoreDao dao = new StudentScoreDao();
+	dao.dbCon();
+	
+}
+
+
 	public void dbCon() {
 		try {
 			Class.forName(driver);
@@ -112,7 +119,7 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 	
 	try {
 		dbCon();
-		String sql="update from Score_inifo set snumber=?,kor=?,eng=?,math=? where score_num=?";
+		String sql="update Score_info set snumber=?,kor=?,eng=?,math=? where score_num=?";
 		
 		PreparedStatement pst = con.prepareStatement(sql);
 		pst.setInt(1, snumber);

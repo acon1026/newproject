@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/insertPtable")
 public class Insertteacher extends HttpServlet{
+<<<<<<< HEAD
+=======
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
@@ -30,8 +32,8 @@ public class Insertteacher extends HttpServlet{
 		
 		resp.sendRedirect("viewP/viewPinsert.jsp");
 		
+>>>>>>> branch 'master' of https://github.com/acon1026/newproject.git
 	
-	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

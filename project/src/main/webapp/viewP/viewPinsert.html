@@ -10,11 +10,7 @@ function find(){
 	document.frm.action="/project/findPtable";
 	document.frm.submit();
 }
-function find1(){
-	document.frm.method ="post";
-	document.frm.action="/project/findPtable2";
-	document.frm.submit();
-}
+
 </script>
 </head>
 <body>
@@ -33,8 +29,7 @@ function find1(){
 </form>
 반드시 primary key를 입력하셔야 조회됩니다.
 <button onclick="find();">조회 및 변경</button>
-or 아이디를 입력하시고 조회하셔도 됩니다.
-<button onclick="find1();">조회 및 변경</button>
+
 
 </body>
 </html>
