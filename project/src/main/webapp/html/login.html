@@ -12,7 +12,7 @@
     
     <div class="loginbox">
          <h2>로그인</h2>
-        <form action="">
+        <form method="get"  action="/project/loginok">
           <fieldset>
             <img src="logo.png">
           <div id="login">
@@ -21,14 +21,17 @@
           </div>
             <legend>로그인 구역</legend>
             <label for="loginid">아이디(E-mail)</label>
-            <input type="text" id="loginid" placeholder="아이디(E-mail)을 입력해 주세요">
+            <input type="text" id="loginid" name="id" placeholder="아이디(E-mail)을 입력해 주세요">
             <label for="loginpw">비밀번호</label>
             <input type="password" id="loginpw" placeholder="비밀번호를 입력해 주세요">
             <ul>
               <li><a href="#">아이디/비밀번호찾기</a></li>
               <li><a href="signupProfessor.html">교수회원가입</a>/<a href="signupStudent.html">학생회원가입</a></li>
             </ul>
-            <button type="submit">로그인</button>
+            <button type="submit"> 학생로그인 </button>
+            <button type="submit">교수로그인</button>
+            
+            
           </fieldset>
         </form>
       </div>
