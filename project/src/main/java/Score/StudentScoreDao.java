@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class StudentScoreDao {
 	String driver="oracle.jdbc.driver.OracleDriver";
 	String url="jdbc:oracle:thin:@localhost:1521:xe";
-	String user="scott";
-	String password="tiger";
+	String user="system";
+	String password="1234";
 	
 Connection con =null;
 	
@@ -136,7 +136,7 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 		
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
-		e.printStackTrace();
+		e.printStackTrace();}
 	}
 	
 	public StudentScore Stablemember(String score_num) {
@@ -150,7 +150,7 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 			pst.setString(1, score_num);
 			ResultSet rs=pst.executeQuery();
 			if(rs.next()) {
-				  ss=new StudentScore(rs.getString(1),rs.getInt(2),rs.getInt(3),rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7));
+				  s=new StudentScore(rs.getString(1),rs.getInt(2),rs.getInt(3),rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7));
 				}
 			rs.close();
 			pst.close();
@@ -159,8 +159,8 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return ss;
-	}
+		return s;
+	
 	
 	
 }
