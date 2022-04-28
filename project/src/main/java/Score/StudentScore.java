@@ -31,6 +31,16 @@ public class StudentScore {
 		this.total =this.kor+this.eng+this.math;
 		this.avg= this.total/3.0;
 	}
+	public StudentScore(String score_num, int snumber, int kor, int eng, int math, int rank) {
+		super();
+		this.score_num = score_num;
+		this.snumber = snumber;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.total =this.kor+this.eng+this.math;
+		this.avg= this.total/3.0;
+	}
 	public String getScore_num() {
 		return score_num;
 	}
