@@ -137,7 +137,8 @@ a {
 #contents .wrapper2 iframe{
 	width: 800px;
 	height: 500px;
-	margin-top: 50px;
+	margin-top: 60px;
+	margin-left: 260px;
 }
 
 #contents .wrapper2::after {

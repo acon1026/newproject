@@ -8,7 +8,7 @@
 }
 
 .tbl {
-  margin-top: 10px;
+  margin-top: 20px;
   border-collapse: collapse;
   border-spacing: 0;
   text-align: center;
@@ -16,47 +16,47 @@
 
 .tbl td {
   border: 1px solid black;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   overflow: hidden;
   padding: 10px 5px;
   text-align: center;
   vertical-align: top;
   word-break: normal;
-  height: 50px;
+  height: 40px;
   line-height: 44px;
 }
 
 .td1 {
-  width: 200px;
+  width: 150px;
   background: #d2d2d2;  
 }
 
 .td2 {
-  width: 500px;
+  width: 400px;
 }
 
 .td2 input{
-	width: 400px;
-  height: 35px;
+  width: 400px;
+  height: 34px;
 }
 
 button{
   margin-top: 30px;
   width: 200px;
-  height: 50px;
+  height: 40px;
   font-size: 20px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid black;
   border-radius: 5px;
-  background:  #87cefa;  
+  background:  #d2d2d2;  
 }
 
 .btn1{
-	margin-right: 50px;
+	margin-right: 86px;
 }
 
 .btn2{
-	margin-left: 50px;
+	margin-left: 86px;
 }
 
 p{
