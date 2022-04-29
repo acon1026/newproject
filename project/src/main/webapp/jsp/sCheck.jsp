@@ -33,7 +33,7 @@
             <li><a href="">성적조회</a></li>
           </ul>
         </li>
-        <li><a href="">로그아웃</a></li>
+        <li><a href="/project/logout">로그아웃</a></li>
       </ul>
     </div>
   </div>
@@ -66,12 +66,12 @@ StudentScore sc = (StudentScore) request.getAttribute("score");
 %>
           <tbody>
             <tr>
-              <td class="td1">"<%=sc.getSnumber()%>"</td>
-              <td class="td2">"<%=sc.getKor()%>"</td>
-              <td class="td3">"<%=sc.getEng()%>"</td>
-              <td class="td4">"<%=sc.getMath()%>"</td>
-              <td class="td5">"<%=sc.getTotal()%>"</td>
-              <td class="td6">"<%=sc.getAvg()%>"</td>
+              <td class="td1"><%=sc.getSnumber()%></td>
+              <td class="td2"><%=sc.getKor()%></td>
+              <td class="td3"><%=sc.getEng()%></td>
+              <td class="td4"><%=sc.getMath()%></td>
+              <td class="td5"><%=sc.getTotal()%></td>
+              <td class="td6"><%=sc.getAvg()%></td>
             </tr>    <%  %>
           </tbody>
         </table>
