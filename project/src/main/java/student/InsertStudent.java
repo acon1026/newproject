@@ -24,7 +24,7 @@ public class InsertStudent  extends HttpServlet{
 		String month =request.getParameter("month");
 		String day = request.getParameter("day");
 		String result = year+month+day;
-		System.out.println(result);
+		
 		
 		
 		
