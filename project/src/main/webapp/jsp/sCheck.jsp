@@ -15,7 +15,7 @@
     <div class="wrapper1">
       <h1>
         <a href="/project/html/img/logo.png" class="logo">
-          <img src="/project/html/logo.png">
+          <img src="/project/html/img/logo.png">
         </a>
       </h1>
       <ul class="top">
