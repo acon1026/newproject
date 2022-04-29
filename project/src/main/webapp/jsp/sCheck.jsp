@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
     <%@ page import="student.Student" %>
      <%@ page import= "Score.StudentScore" %>
-     <%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,23 +101,16 @@ StudentScore sc = (StudentScore) request.getAttribute("score");
             </tr>
           </thead>
           <tbody>
-          <%  ArrayList<Student> list  =(ArrayList<Student>) request.getAttribute("list");
-	   ArrayList<StudentScore> list1 = (ArrayList<StudentScore>) request.getAttribute("list1");
-for(int i=0;  i<list.size();  i++)  {
-	Student s =  list.get(i);
-	%>
+          
             <tr>
-              <td class="td1"><%= s.getSnumber() %></td>
-              <%for(int j=0; j<list1.size(); j++){
-		StudentScore ss = list1.get(j);
-	if(s.getSnumber() == ss.getSnumber()){ %>
-              <td class="td2"><%= ss.getKor() %></td>
-              <td class="td3"><%= ss.getEng() %></td>
-              <td class="td4"><%= ss.getMath() %></td>
-              <td class="td5"><%= ss.getTotal() %></td>
-              <td class="td6"><%= ss.getAvg() %></td>
+              <td class="td1"></td>
+              <td class="td2"></td>
+              <td class="td3"></td>
+              <td class="td4"></td>
+              <td class="td5"></td>
+              <td class="td6"></td>
             </tr>
-            <%} }}%>
+           
           </tbody>
         </table>
       </div>

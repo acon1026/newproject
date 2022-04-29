@@ -15,7 +15,6 @@
 <tr>
 <td>번호</td>
 <td>아이디</td>
-<td>패스워드</td>
 <td>이름</td>
 <td>생일</td>
 <td>반</td>
@@ -31,24 +30,21 @@
 for(int i=0;  i<list.size();  i++)  {
 	Student s =  list.get(i);
 	%>
-	<tr>
-	<td><%= s.getSnumber() %></td>
-	<td><%= s.getId() %></td>
-	<td><%= s.getPw() %></td>
-	<td><%= s.getName() %></td>
-	<td><%= s.getBirthday() %></td>
-	<td><%= s.getBan() %></td>
 	<%for(int j=0; j<list1.size(); j++){
 		StudentScore ss = list1.get(j);
 	if(s.getSnumber() == ss.getSnumber()){ %>
-	
+	<tr>
+	<td><%= s.getSnumber() %></td>
+	<td><%= s.getId() %></td>
+	<td><%= s.getName() %></td>
+	<td><%= s.getBirthday() %></td>
+	<td><%= s.getBan() %></td>
 	
 	<td><%= ss.getKor() %></td>
 	<td><%= ss.getEng() %></td>
 	<td><%= ss.getMath() %></td>
 	<td><%= ss.getTotal() %></td>
 	<td><%= ss.getAvg() %></td>
-	
 	
 	
 	
