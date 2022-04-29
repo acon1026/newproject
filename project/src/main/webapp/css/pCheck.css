@@ -52,6 +52,12 @@ a {
   margin-top: 5px;
 }
 
+#header .wrapper1 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
+}
+
 #header .top {
   position: relative;
   float: right;
@@ -99,8 +105,7 @@ a {
   transition: ease 1s;
 }
 
-#contents {
-  overflow: hidden;
+#contents {  
   width: 1320px;
   height: 720px;
   margin: 0 auto;
@@ -123,6 +128,7 @@ a {
   width: 1200px;
   height: 600px;
   margin: 0 auto;
+  overflow: auto;
 }
 
 #contents .wrapper2::after {

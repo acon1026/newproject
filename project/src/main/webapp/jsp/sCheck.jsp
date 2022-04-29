@@ -14,8 +14,8 @@
   <div id="header">
     <div class="wrapper1">
       <h1>
-        <a href="" class="logo">
-          <img src="../image/logo.png">
+        <a href="/project/html/img/logo.png" class="logo">
+          <img src="/project/html/logo.png">
         </a>
       </h1>
       <ul class="top">
@@ -122,7 +122,7 @@ StudentScore sc = (StudentScore) request.getAttribute("score");
   <div id="footer">
     <div class="wrapper4">
       <a href="http://www.acorncampus.co.kr/" class="emblem">
-        <img src="../image/logo.png">
+        <img src="/project/html/img/logo.png">
       </a>
       <div class="address">
         <ul>
