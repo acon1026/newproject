@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AcronAcademy 회원가입</title>
     <head>
-        <link href="signup.css" rel="stylesheet" />
+        <link href="../css/signup.css" rel="stylesheet" />
         <script src="signup.js"></script>
     
     </head>
@@ -15,7 +15,7 @@
         <div class="wrapper">
             <div class="title"><h1 style="font-size: 21px;">학생 회원가입</h1></div>
             <div class="img">
-                <img src="./logo.png">
+                <img src="../html/img/logo.png">
             </div>
             <div class="email">
                 <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
@@ -107,22 +107,6 @@
                     <option>31일</option>
                 </select>
                 <div id="areaError" class="error"></div>
-            <div class="phone">
-                <input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
-                <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
-                <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
-    
-            </div>
-            <div class="auth">
-                <div id="certificationNumber">000000</div>
-                <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
-            </div>
-    
-            <div class="timer">
-                <div id="timeLimit">03:00</div>
-                <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
-            </div>
-           
             </div>
              <div class="gender">
                 <input id="gender_man" type="radio" name="gender">남성  
