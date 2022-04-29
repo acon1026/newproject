@@ -1,35 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script>
-function list(){
-	document.frm.method = "get";
-	document.frm.action="/project/listScore2";
-	document.frm.submit();
-}
-function find(){
-	document.frm.method ="post";
-	document.frm.action="/project/listStudent.20_3";
-	document.frm.submit();
-}
-
-</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcornAcademy 학사정보시스템</title>
+  <link rel="stylesheet" href="../css/viewScoreinsert.css">
+  <script>
+  function list(){
+		document.frm.method = "get";
+		document.frm.action="/project/listScore2";
+		document.frm.submit();
+	}
+	function find(){
+		document.frm.method ="post";
+		document.frm.action="/project/listStudent.20_3";
+		document.frm.submit();
+	}
+  </script>
 </head>
+
 <body>
-
-<form name ="frm" method="post" action="/project/insertScore">
-<table>
-<tr><td>점수번호</td><td><input type="text" name="score_num" ></td></tr>
-<tr><td>학생번호</td><td><input type="text" name="snumber" ></td></tr>
-<tr><td>국어</td><td><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></td></tr>
-<tr><td>영어</td><td><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></td></tr>
-<tr><td>수학</td><td><input type="text" name="math" placeholder ="숫자만 입력해주세요"></td></tr>
-</table>
-<button>등록</button><button onclick="find();">조회 및 변경</button>
-</form>
-<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
-
+  <div id="header">
+    <div class="wrapper1">
+      <h1>
+        <a href="http://www.acorncampus.co.kr/" class="logo">
+          <img src="./img/logo.png" alt="AcornAcademy">
+        </a>
+      </h1>
+      <ul class="top">
+        <li><a href="">게시판</a>
+          <ul class="drop">
+            <li><a href="">공지사항</a></li>
+            <li><a href="">이용안내</a></li>
+            <li><a href="">주간식단표</a></li>
+          </ul>
+        </li>
+        <li><a href="">마이페이지</a>
+          <ul class="drop">
+            <li><a href="">개인정보수정</a></li>
+            <li><a href="">학사관리</a></li>
+            <li><a href="">학생면담</a></li>
+          </ul>
+        </li>
+        <li><a href="">로그아웃</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="contents">
+    <div class="wrapper1">
+      <ul class="top">
+        <li><a href="">수정</a></li>
+        <li><a href="">입력</a></li>
+        <li><a href="">정보조회</a></li>
+      </ul>
+    </div>
+    <div class="wrapper2">
+      <div class="main">
+		<form name ="frm" method="post" action="/project/insertScore">
+		<table>
+		<tr>
+		<th>점수번호</th>
+		<th><input type="text" name="score_num" ></th>
+		</tr>
+		<tr>
+		<th>학생번호</th>
+		<th><input type="text" name="snumber" ></th>
+		</tr>
+		<tr>
+		<th>국어</th>
+		<th><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></th>
+		</tr>
+		<tr>
+		<th>영어</th>
+		<th><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></th>
+		</tr>
+		<tr>
+		<th>수학</th>
+		<th><input type="text" name="math" placeholder ="숫자만 입력해주세요"></th>
+		</tr>
+		</table>
+		<button>등록</button><button onclick="find();">조회 및 변경</button>
+		</form>
+		<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
+      </div>
+    </div>
+    <div class="wrapper3">
+      <ul class="bottom">
+        <li><a href="">고객센터</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="wrapper4">
+      <a href="http://www.acorncampus.co.kr/" class="emblem">
+        <img src="./img/logo.png" alt="AcornAcademy">
+      </a>
+      <div class="address">
+        <ul>
+          <li>
+            <a href="">개인정보처리방침</a>
+          </li>
+        </ul>
+        <span class="add">
+          <span>서울특별시 마포구 양화로 122 AcornAcademy TEL.02-2231-6413</span>
+        </span>
+        <span class="copyright">COPYRIGHT(C)2022 ACORN ACADEMY. ALL RIGHTS RESERVED.
+        </span>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
