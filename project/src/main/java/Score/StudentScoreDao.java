@@ -139,7 +139,7 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 		e.printStackTrace();
 	}
 	
-	public StudentScore Stablemember(String score_num) {
+	public StudentScore tablemember(String score_num) {
 		StudentScore s =null;
 		
 		try {
