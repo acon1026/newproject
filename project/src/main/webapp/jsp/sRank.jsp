@@ -15,7 +15,7 @@
     <div class="wrapper1">
       <h1>
         <a href="" class="logo">
-          <img src="../image/logo.png">
+          <img src="/project/html/img/logo.png">
         </a>
       </h1>
       <ul class="top">
@@ -41,7 +41,7 @@
     <div class="wrapper1">
       <ul class="top">
         <li><a href="">전체석차</a></li>
-        <li><a href="">성적조회</a></li>
+        <li><a href="/project/sfindScore">성적조회</a></li>
       </ul>
     </div>
     <div class="wrapper2">
@@ -119,7 +119,7 @@
   <div id="footer">
     <div class="wrapper4">
       <a href="http://www.acorncampus.co.kr/" class="emblem">
-        <img src="../image/logo.png">
+        <img src="/project/html/img/logo.png">
       </a>
       <div class="address">
         <ul>

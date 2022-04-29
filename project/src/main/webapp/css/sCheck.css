@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  color:red;
 }
 
 div {
@@ -50,12 +53,6 @@ a {
 #header h1 a {
   float: left;
   margin-top: 5px;
-}
-
-#header .wrapper1 img{
-  width: 180px;
-  height: 70px;
-  margin-top: -20px;
 }
 
 #header .top {
@@ -105,7 +102,8 @@ a {
   transition: ease 1s;
 }
 
-#contents {  
+#contents {
+  overflow: hidden;
   width: 1320px;
   height: 720px;
   margin: 0 auto;
@@ -134,14 +132,13 @@ a {
   width: 1200px;
   height: 600px;
   content: "";
-  background: url('/project/html/img/school.jpg');
+  background: url('../image/school.jpg');
   background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   opacity: 0.15;
-  overflow: auto;
 }
 
 #contents .wrapper3 {
@@ -260,15 +257,15 @@ a {
 }
 
 .tbl .th1 {
-  width: 100px;
+  width: 150px;
 }
 
 .tbl .th2 {
-  width: 200px;
+  width: 250px;
 }
 
 .tbl .th3 {
-  width: 300px;
+  width: 350px;
 }
 
 .tbl .th4 {
@@ -283,10 +280,6 @@ a {
   width: 150px;
 }
 
-.tbl .th7 {
-  width: 150px;
-}
-
 .main .p1 {
   margin-top: 3px;
   width: 100%;
@@ -296,6 +289,11 @@ a {
 }
 
 .main .p2 {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.main .p3 {
   margin-top: 25px;
   font-size: 16px;
 }

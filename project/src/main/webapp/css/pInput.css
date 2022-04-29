@@ -52,6 +52,12 @@ a {
   margin-top: 5px;
 }
 
+#header .wrapper1 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
+}
+
 #header .top {
   position: relative;
   float: right;
@@ -99,8 +105,7 @@ a {
   transition: ease 1s;
 }
 
-#contents {
-  overflow: hidden;
+#contents {  
   width: 1320px;
   height: 720px;
   margin: 0 auto;
@@ -121,8 +126,9 @@ a {
   position: relative;
   border: 1px solid #d2d2d2;
   width: 1200px;
-  height: 600px;
-  margin: 0 auto;
+  height: 600px;  
+  margin: auto;
+  overflow: auto;
 }
 
 #contents .wrapper2::after {
@@ -198,6 +204,12 @@ a {
 #footer .emblem {
   float: left;
   margin-top: 15px;
+}
+
+#footer .wrapper4 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
 }
 
 #footer .address {
