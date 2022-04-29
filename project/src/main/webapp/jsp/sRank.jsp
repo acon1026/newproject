@@ -41,7 +41,7 @@
     <div class="wrapper1">
       <ul class="top">
         <li><a href="">전체석차</a></li>
-        <li><a href="">성적조회</a></li>
+        <li><a href="/project/sfindScore">성적조회</a></li>
       </ul>
     </div>
     <div class="wrapper2">

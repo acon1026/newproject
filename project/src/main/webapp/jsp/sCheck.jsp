@@ -40,7 +40,7 @@
   <div id="contents">
     <div class="wrapper1">
       <ul class="top">
-        <li><a href="">전체석차</a></li>
+        <li><a href="/project/fscore">전체석차</a></li>
         <li><a href="">성적조회</a></li>
       </ul>
     </div>
