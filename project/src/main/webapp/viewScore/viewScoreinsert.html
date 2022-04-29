@@ -23,32 +23,32 @@
 
 <body>
 
-		<form name ="frm" method="post" action="/project/insertScore">
-		<table>
-		<tr>
-		<th>점수번호</th>
-		<th><input type="text" name="score_num" ></th>
-		</tr>
-		<tr>
-		<th>학생번호</th>
-		<th><input type="text" name="snumber" ></th>
-		</tr>
-		<tr>
-		<th>국어</th>
-		<th><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></th>
-		</tr>
-		<tr>
-		<th>영어</th>
-		<th><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></th>
-		</tr>
-		<tr>
-		<th>수학</th>
-		<th><input type="text" name="math" placeholder ="숫자만 입력해주세요"></th>
-		</tr>
-		</table>
-		<button>등록</button><button onclick="find();">조회 및 변경</button>
-		</form>
-		<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
+	<form name ="frm" method="post" action="/project/insertScore">
+	<table class="tbl">
+	<tr>
+	<td class="td1">점수번호</td>
+	<td class="td2"><input type="text" name="score_num" ></td>
+	</tr>
+	<tr>
+	<td class="td1">학생번호</td>
+	<td class="td2"><input type="text" name="snumber" ></td>
+	</tr>
+	<tr>
+	<td class="td1">국어</td>
+	<td class="td2"><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></td>
+	</tr>
+	<tr>
+	<td class="td1">영어</td>
+	<td class="td2"><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></td>
+	</tr>
+	<tr>
+	<td class="td1">수학</td>
+	<td class="td2"><input type="text" name="math" placeholder ="숫자만 입력해주세요"></td>
+	</tr>
+	</table>
+	<button class="btn1">등록</button><button class="btn2" onclick="find();">조회 및 변경</button>
+	</form>
+	<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
 
 </body>
 

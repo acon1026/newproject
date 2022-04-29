@@ -131,6 +131,7 @@ a {
   height: 600px;
   margin: auto;
   overflow: auto;
+  text-align: center;
 }
 
 #contents .wrapper2 iframe{
