@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class FlistStudent3 extends HttpServlet {
 	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		
 		StudentDao dao = new StudentDao();
@@ -23,7 +23,7 @@ public class FlistStudent3 extends HttpServlet {
 			
 			
 			req.setAttribute("list", list);
-			req.getRequestDispatcher("/findScore").forward(req, resp);
+			req.getRequestDispatcher("/jsp/pCheck.jsp").forward(req, resp);
 			
 		
 		
