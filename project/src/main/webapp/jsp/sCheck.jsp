@@ -66,12 +66,12 @@ StudentScore sc = (StudentScore) request.getAttribute("score");
 %>
           <tbody>
             <tr>
-              <td class="td1">"<%=sc.getSnumber()%>"</td>
-              <td class="td2">"<%=sc.getKor()%>"</td>
-              <td class="td3">"<%=sc.getEng()%>"</td>
-              <td class="td4">"<%=sc.getMath()%>"</td>
-              <td class="td5">"<%=sc.getTotal()%>"</td>
-              <td class="td6">"<%=sc.getAvg()%>"</td>
+              <td class="td1"><%=sc.getSnumber()%></td>
+              <td class="td2"><%=sc.getKor()%></td>
+              <td class="td3"><%=sc.getEng()%></td>
+              <td class="td4"><%=sc.getMath()%></td>
+              <td class="td5"><%=sc.getTotal()%></td>
+              <td class="td6"><%=sc.getAvg()%></td>
             </tr>    <%  %>
           </tbody>
         </table>
