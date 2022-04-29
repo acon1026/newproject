@@ -137,7 +137,7 @@ a {
   width: 1200px;
   height: 600px;
   content: "";
-  background: url('../image/school.jpg');
+  background: url('/project/html/img/school.jpg');
   background-size: cover;
   position: absolute;
   top: 0;
