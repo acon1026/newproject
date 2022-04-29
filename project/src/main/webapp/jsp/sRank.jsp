@@ -33,7 +33,7 @@
             <li><a href="">성적조회</a></li>
           </ul>
         </li>
-        <li><a href="">로그아웃</a></li>
+        <li><a href="/project/logout">로그아웃</a></li>
       </ul>
     </div>
   </div>
