@@ -48,16 +48,16 @@ public class Login extends HttpServlet{
 				if(list.get(i).getp_pw().equals( session.getAttribute("pw"))) {
 					TeacherTable p = dao.tablemember2(id);
 					req.setAttribute("protable", p);
-					req.getRequestDispatcher("html/p_main.html").forward(req, resp);
+					req.getRequestDispatcher("/html/p_main.html").forward(req, resp);
 				}else {
 					out.print("<script>alert('비밀번호 오류.')</script>");
-					req.getRequestDispatcher("html/login.html").forward(req, resp);
+					req.getRequestDispatcher("/html/login.html").forward(req, resp);
 				}
 			}
 			
 		}
 		out.print("<script>alert('아이디오류.')</script>");
-		req.getRequestDispatcher("html/login.html").forward(req, resp);
+		req.getRequestDispatcher("/html/login.html").forward(req, resp);
 	
 	}
 

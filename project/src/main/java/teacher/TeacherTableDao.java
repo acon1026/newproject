@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class TeacherTableDao {
 	String driver="oracle.jdbc.driver.OracleDriver";
 	String url="jdbc:oracle:thin:@localhost:1521:xe";
-	String user="scott";
-	String password="tiger";
+	String user="system";
+	String password="1234";
 	
 	Connection con = null;
 	
@@ -42,7 +42,6 @@ public void inserttable(TeacherTable t) {
 			pst.setString(4, t.getp_name());
 			pst.setString(5, t.getMain());
 			pst.setString(6, t.getBan());
-			
 			pst.executeQuery();
 			
 			pst.close();
