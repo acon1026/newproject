@@ -23,7 +23,7 @@ public class FlistStudent extends HttpServlet {
 			
 			
 			req.setAttribute("list", list);
-			req.getRequestDispatcher("/kds-view/view.jsp").forward(req, resp);
+			req.getRequestDispatcher("/jsp/pCheck.jsp").forward(req, resp);
 			
 		
 		

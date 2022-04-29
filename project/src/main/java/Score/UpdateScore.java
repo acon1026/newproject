@@ -1,6 +1,7 @@
 package Score;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import student.Student;
+import student.StudentDao;
 import teacher.TeacherTable;
 import teacher.TeacherTableDao;
 
@@ -33,6 +36,9 @@ public class UpdateScore extends HttpServlet{
 		StudentScore ss = dao.tablemember(score_num);
 		
 		req.setAttribute("score", ss);
+		StudentDao dao1 = new StudentDao();
+		ArrayList<Student> list = dao1.listMembers();
+		req.setAttribute("list", list);
 		req.getRequestDispatcher("viewScore/viewScoreupdate.jsp").forward(req, resp);
 		
 	}

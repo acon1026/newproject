@@ -23,6 +23,7 @@
 <td>수학</td>
 <td>합계</td>
 <td>평균</td>
+<td>score_num</td>
 
 </tr>
 <%  ArrayList<Student> list  =(ArrayList<Student>) request.getAttribute("list");
@@ -45,6 +46,7 @@ for(int i=0;  i<list.size();  i++)  {
 	<td><%= ss.getMath() %></td>
 	<td><%= ss.getTotal() %></td>
 	<td><%= ss.getAvg() %></td>
+	<td><%= ss.getScore_num() %></td>
 	
 	
 	
