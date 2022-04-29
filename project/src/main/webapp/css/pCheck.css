@@ -206,6 +206,12 @@ a {
   margin-top: 15px;
 }
 
+#footer .wrapper4 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
+}
+
 #footer .address {
   float: left;
   margin-left: 10px;
