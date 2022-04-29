@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="Score.StudentScore" %>
+<%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,15 +90,21 @@
             </tr>
           </thead>
           <tbody>
+          <%  ArrayList<StudentScore> list  =(ArrayList<StudentScore>) request.getAttribute("list");
+				for(int i=0;  i<list.size();  i++)  {
+					StudentScore s =  list.get(i); 
+			%>
             <tr>
-              <td class="td1"></td>
-              <td class="td2"></td>
-              <td class="td3"></td>
-              <td class="td4"></td>
-              <td class="td5"></td>
-              <td class="td6"></td>
-              <td class="td7"></td>
+              <td class="td1"><%= s.getSnumber() %> </td>
+              <td class="td2"><%= s.getKor() %></td>
+              <td class="td3"><%= s.getEng() %></td>
+              <td class="td4"><%= s.getMath() %></td>
+              <td class="td5"><%= s.getTotal() %></td>
+              <td class="td6"><%= s.getAvg() %></td>
+              <td class="td7"><%= s.getRank() %></td>
             </tr>
+            <% } %>
+       
           </tbody>
         </table>
       </div>

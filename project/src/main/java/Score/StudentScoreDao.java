@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class StudentScoreDao {
 	String driver="oracle.jdbc.driver.OracleDriver";
 	String url="jdbc:oracle:thin:@localhost:1521:xe";
-	String user="system";
-	String password="1234";
+	String user="scott";
+	String password="tiger";
 	
 Connection con =null;
 	
@@ -95,9 +95,9 @@ public ArrayList<StudentScore> table(){
 		Statement st = null;
 		st = con.createStatement();
 		
-		String sql="select score_num 점수번호 , snumber 학생번호 , kor 국어 , eng 영어 , math 수학 , total 총점 , avg 평균\r\n"
-				+ "       , rank() over (order by total desc) 석차\r\n"
-				+ "       from score_info\r\n"
+		String sql="select score_num 점수번호 , snumber 학생번호 , kor 국어 , eng 영어 , math 수학 , total 총점 , avg 평균"
+				+ "       , rank() over (order by total desc) 석차"
+				+ "       from score_info"
 				+ "       order by total desc";
 		ResultSet rs = st.executeQuery(sql);
 		
@@ -139,12 +139,16 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 		e.printStackTrace();}
 	}
 	
-	public StudentScore tablemember(String score_num) {
+	public StudentScore Studenttablemember(String score_num) {
 		StudentScore s =null;
 		
 		try {
 			dbCon();
-			String sql="select * from Score_info where score_num=?";
+			String sql="SELECT s.id , sc.snumber , sc.kor , sc.eng ,sc.math, sc.total , sc.avg"
+					+ " FROM score_info sc"
+					+ " JOIN s_info s"
+					+ " ON sc.snumber =s.snumber       "
+					+ " where id = ?";
 			PreparedStatement pst;
 			pst = con.prepareStatement(sql);
 			pst.setString(1, score_num);
@@ -160,9 +164,13 @@ public void updatetable(String score_num, int snumber, int kor, int eng, int mat
 			e.printStackTrace();
 		}
 		return s;
+		
+		
+		
 	
 	
 	
 }
+	
 
 }
