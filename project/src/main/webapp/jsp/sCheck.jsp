@@ -7,7 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>AcornAcademy 학사정보시스템</title>
-<link rel="stylesheet" href="../css/sCheck.css">
+<link rel="stylesheet" href="/project/css/main.css">
+
 </head>
 <body>
   <div id="header">
