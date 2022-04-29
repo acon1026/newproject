@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class StudentScoreDao {
 	String driver="oracle.jdbc.driver.OracleDriver";
 	String url="jdbc:oracle:thin:@localhost:1521:xe";
-	String user="scott";
-	String password="tigher";
+	String user="system";
+	String password="1234";
 	
 Connection con =null;
 	
