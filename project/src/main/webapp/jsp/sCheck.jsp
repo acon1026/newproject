@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="student.Student" %>
+     <%@ page import= "Score.StudentScore" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,15 +59,19 @@
               <th class="th1">평균</th>
             </tr>
           </thead>
+          <%
+//Student s = (Student)request.getAttribute("s");
+StudentScore sc = (StudentScore) request.getAttribute("score");
+%>
           <tbody>
             <tr>
-              <td class="td1"></td>
-              <td class="td2"></td>
-              <td class="td3"></td>
-              <td class="td4"></td>
-              <td class="td5"></td>
-              <td class="td6"></td>
-            </tr>
+              <td class="td1">"<%=sc.getSnumber()%>"</td>
+              <td class="td2">"<%=sc.getKor()%>"</td>
+              <td class="td3">"<%=sc.getEng()%>"</td>
+              <td class="td4">"<%=sc.getMath()%>"</td>
+              <td class="td5">"<%=sc.getTotal()%>"</td>
+              <td class="td6">"<%=sc.getAvg()%>"</td>
+            </tr>    <%  %>
           </tbody>
         </table>
         <p class="p3">
