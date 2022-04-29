@@ -241,8 +241,10 @@ a {
 }
 
 .tbl {
+  margin-top: 10px;
   border-collapse: collapse;
   border-spacing: 0;
+  text-align: center;
 }
 
 .tbl td {

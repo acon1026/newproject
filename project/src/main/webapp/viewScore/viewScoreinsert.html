@@ -21,18 +21,15 @@ function find(){
 
 <form name ="frm" method="post" action="/project/insertScore">
 <table>
-<tr><td>score_num</td><td><input type="text" name="score_num" ></td></tr>
-<tr><td>snumber</td><td><input type="text" name="snumber" ></td></tr>
+<tr><td>점수번호</td><td><input type="text" name="score_num" ></td></tr>
+<tr><td>학생번호</td><td><input type="text" name="snumber" ></td></tr>
 <tr><td>국어</td><td><input type="text" name="kor"  placeholder ="숫자만 입력해주세요"></td></tr>
 <tr><td>영어</td><td><input type="text" name="eng"  placeholder ="숫자만 입력해주세요"></td></tr>
 <tr><td>수학</td><td><input type="text" name="math" placeholder ="숫자만 입력해주세요"></td></tr>
-<tr><td><button>등록</button></td></tr>
-<tr><td><button onclick="list();">전체조회</button></td>
-<td><button onclick="find();">조회 및 변경</button></td></tr>
-
 </table>
-
+<button>등록</button><button onclick="find();">조회 및 변경</button>
 </form>
-<p>조회 및 변경은 score_num 이 필수 입니다.</p>
+<p>조회 및 변경은 <span>score_num</span>이 필수 입니다.</p>
+
 </body>
 </html>
