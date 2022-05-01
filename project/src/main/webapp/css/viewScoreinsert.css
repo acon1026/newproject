@@ -16,20 +16,20 @@
 }
 
 .tbl tr{
-  height: 35px;
+  height: 28px;
 }
 
 .tbl td {
   border: 1px solid black;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   overflow: hidden;
   padding: 10px 5px;
   text-align: center;
   vertical-align: top;
   word-break: normal;
-  height: 20px;
-  line-height: 35px;
+  height: 22px;
+  line-height: 28px;
 }
 
 .td1 {
@@ -42,32 +42,17 @@
 }
 
 .td2 input{
-	width: 400px;
-  height: 28px;
+  width: 400px;
+  height: 23px;
 }
 
 button{
   margin-top: 15px;
+  margin-left: 420px;
   width: 160px;
-  height: 35px;
+  height: 30px;
   font-size: 20px;
   border: 1px solid #d2d2d2;
   border-radius: 4px;
   background:  #87cefa;  
-}
-
-.btn1{
-  margin-right: 60px;
-  margin-left: 260px;
-}
-
-.btn2{
-	margin-left: 60px;
-  margin-left: 60px;
-}
-
-p{
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
 }

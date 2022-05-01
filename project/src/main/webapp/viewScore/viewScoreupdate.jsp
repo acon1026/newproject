@@ -53,7 +53,7 @@
 }
 
 .td2 input{
-	width: 400px;
+  width: 400px;
   height: 28px;
 }
 
@@ -99,19 +99,19 @@ button{
 </tr>
 <tr>
 <td class="td1">영어</td>
-<td class="td1"><input type="text" name="eng" value="<%=ss.getEng()%>" ></td>
+<td class="td2"><input type="text" name="eng" value="<%=ss.getEng()%>" ></td>
 </tr>
 <tr>
 <td class="td1">수학</td>
-<td class="td1"><input type="text" name="math" value="<%=ss.getMath()%>" ></td>
+<td class="td2"><input type="text" name="math" value="<%=ss.getMath()%>" ></td>
 </tr>
 <tr>
 <td class="td1">합계</td>
-<td class="td1"><input type="text" name="total" value="<%=ss.getTotal()%>" readonly></td>
+<td class="td2"><input type="text" name="total" value="<%=ss.getTotal()%>" readonly></td>
 </tr>
 <tr>
 <td class="td1">평균</td>
-<td class="td1"><input type="text" name="avg" value="<%=ss.getAvg()%>" readonly></td>
+<td class="td2"><input type="text" name="avg" value="<%=ss.getAvg()%>" readonly></td>
 </tr>
 
 </table>
