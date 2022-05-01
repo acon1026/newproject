@@ -8,7 +8,59 @@
 <meta charset="UTF-8">
 <title>AcornAcademy 학사정보시스템</title>
 <link rel="stylesheet" href="/project/css/main.css">
+<style>
+.tbl {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
 
+.tbl td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tbl th {
+  border: 1px solid black;
+  background-color: #d2d2d2;
+  font-size: 16px;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 10px 5px;
+  text-align: center;
+  vertical-align: top;
+  word-break: normal;
+}
+
+.tbl .th1 {
+  width: 200px;
+}
+
+.tbl .th2 {
+  width: 200px;
+}
+
+.tbl .th3 {
+  width: 200px;
+}
+
+.tbl .th4 {
+  width: 200px;
+}
+
+.tbl .th5 {
+  width: 200px;
+}
+
+.tbl .th6 {
+  width: 200px;
+}
+</style>
 </head>
 <body>
   <div id="header">
@@ -45,19 +97,17 @@
       </ul>
     </div>
     <div class="wrapper2">
-      <div class="main">
-        <p class="p1">학번/성명&nbsp;<input class="search" type="text"><button>찾기</button><input class="result" type="text">
-        </p>
-        <p class="p2">▣ 나의 성적</p>
+      <div class="main">        
+        <p class="p1">▣ 나의 성적</p>
         <table class="tbl">
           <thead>
             <tr>
-              <th class="th2">학생번호</th>
-              <th class="th3">국어</th>
-              <th class="th4">영어</th>
-              <th class="th5">수학</th>
-              <th class="th6">총점</th>
-              <th class="th1">평균</th>
+              <th class="th1">학생번호</th>
+              <th class="th2">국어</th>
+              <th class="th3">영어</th>
+              <th class="th4">수학</th>
+              <th class="th5">총점</th>
+              <th class="th6">평균</th>
             </tr>
           </thead>
           <%
@@ -75,44 +125,7 @@ StudentScore sc = (StudentScore) request.getAttribute("score");
             </tr>    <%  %>
           </tbody>
         </table>
-        <p class="p3">
-          ▣ 학기별 성적
-          <select name="semester">
-            <option value="none">== 선택 ==</option>
-            <option value="v1">1학년 1학기</option>
-            <option value="v2">1학년 2학기</option>
-            <option value="v3">2학년 1학기</option>
-            <option value="v4">2학년 2학기</option>
-            <option value="v5">3학년 1학기</option>
-            <option value="v6">3학년 2학기</option>
-            <option value="v7">4학년 1학기</option>
-            <option value="v8">4학년 2학기</option>
-          </select>
-        </p>
-        <table class="tbl">
-          <thead>
-            <tr>
-              <th class="th1">학생번호</th>
-              <th class="th2">국어</th>
-              <th class="th3">영어</th>
-              <th class="th4">수학</th>
-              <th class="th5">총점</th>
-              <th class="th6">평균</th>
-            </tr>
-          </thead>
-          <tbody>
-          
-            <tr>
-              <td class="td1"></td>
-              <td class="td2"></td>
-              <td class="td3"></td>
-              <td class="td4"></td>
-              <td class="td5"></td>
-              <td class="td6"></td>
-            </tr>
-           
-          </tbody>
-        </table>
+        
       </div>
     </div>
     <div class="wrapper3">
