@@ -8,25 +8,66 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-</style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    .tbl {
+      margin-top: 15px;
+      border-collapse: collapse;
+      border-spacing: 0;
+      text-align: center;
+    }
+
+    .tbl tr {
+      height: 35px;
+    }
+
+    .tbl td {
+      border: 1px solid black;
+      font-size: 20px;
+      font-weight: 700;
+      overflow: hidden;
+      padding: 10px 5px;
+      text-align: center;
+      vertical-align: top;
+      word-break: normal;
+      height: 20px;
+      line-height: 35px;
+    }
+
+    thead .td1 {
+      width: 150px;
+      background: #d2d2d2;
+    }
+
+    tbody .td2 {
+      width: 150px;
+    }
+  </style>
 </head>
 <body>
 
-<table>
+<table class="tbl">
 <thead>
 <tr>
-<td>번호</td>
-<td>아이디</td>
-<td>이름</td>
-<td>생일</td>
-<td>반</td>
-<td>국어</td>
-<td>영어</td>
-<td>수학</td>
-<td>합계</td>
-<td>평균</td>
-<td>score_num</td>
+<td class="td1">번호</td>
+<td class="td1">아이디</td>
+<td class="td1">이름</td>
+<td class="td1">생일</td>
+<td class="td1">반</td>
+<td class="td1">국어</td>
+<td class="td1">영어</td>
+<td class="td1">수학</td>
+<td class="td1">합계</td>
+<td class="td1">평균</td>
+<td class="td1">score_num</td>
 </tr>
 </thead>
 <%  ArrayList<Student> list  =(ArrayList<Student>) request.getAttribute("list");
@@ -39,17 +80,17 @@ for(int i=0;  i<list.size();  i++)  {
 	if(s.getSnumber() == ss.getSnumber()){ %>
 	<tbody>
 	<tr>
-	<td><%= s.getSnumber() %></td>
-	<td><%= s.getId() %></td>
-	<td><%= s.getName() %></td>
-	<td><%= s.getBirthday() %></td>
-	<td><%= s.getBan() %></td>	
-	<td><%= ss.getKor() %></td>
-	<td><%= ss.getEng() %></td>
-	<td><%= ss.getMath() %></td>
-	<td><%= ss.getTotal() %></td>
-	<td><%= ss.getAvg() %></td>
-	<td><%= ss.getScore_num() %></td>
+	<td class="td2"><%= s.getSnumber() %></td>
+	<td class="td2"><%= s.getId() %></td>
+	<td class="td2"><%= s.getName() %></td>
+	<td class="td2"><%= s.getBirthday() %></td>
+	<td class="td2"><%= s.getBan() %></td>	
+	<td class="td2"><%= ss.getKor() %></td>
+	<td class="td2"><%= ss.getEng() %></td>
+	<td class="td2"><%= ss.getMath() %></td>
+	<td class="td2"><%= ss.getTotal() %></td>
+	<td class="td2"><%= ss.getAvg() %></td>
+	<td class="td2"><%= ss.getScore_num() %></td>
 	</tr>
 	</tbody>	
 	
