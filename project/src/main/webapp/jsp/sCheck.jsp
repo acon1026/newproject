@@ -9,7 +9,7 @@
 <title>AcornAcademy 학사정보시스템</title>
 <link rel="stylesheet" href="/project/css/s_main.css">
 <style>
-p1{
+.p1{
   margin-top: 20px;
 }
 
