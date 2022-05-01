@@ -79,17 +79,18 @@ button{
 <form method="post" action="/project/updateScore">
 <table class="tbl">
 <tr>
-<td>score_num</td>
-<td><input type="text" name="score_num" value="<%=ss.getScore_num()%>" readonly></td>
+<td class="td1">score_num</td>
+<td class="td2"><input type="text" name="score_num" value="<%=ss.getScore_num()%>" readonly></td>
 </tr>
 <tr>
-<td>snumber</td><td><input type="text" name="snumber" value="<%=ss.getSnumber()%>" readonly></td>
+<td class="td1">snumber</td>
+<td class="td2"><input type="text" name="snumber" value="<%=ss.getSnumber()%>" readonly></td>
 </tr>
 <%for(int i=0; i<list.size(); i++){ 
 	if(ss.getSnumber() == list.get(i).getSnumber()){%>
 <tr>
-<td>이름</td>
-<td><input type="text" name="name" value="<%=list.get(i).getName()%>"  ></td>
+<td class="td1">이름</td>
+<td class="td2"><input type="text" name="name" value="<%=list.get(i).getName()%>"  ></td>
 </tr>
 <%}}%>
 
