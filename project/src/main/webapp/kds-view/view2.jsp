@@ -26,7 +26,7 @@
     }
 
     .tbl tr {
-      height: 35px;
+      height: 22px;
     }
 
     .tbl td {
@@ -38,7 +38,7 @@
       text-align: center;
       vertical-align: top;
       word-break: normal;
-      height: 18px;
+      height: 22px;
       line-height: 35px;
     }
 
