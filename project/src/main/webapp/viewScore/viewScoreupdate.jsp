@@ -59,6 +59,7 @@
 
 button{
   margin-top: 15px;
+  margin-left: 420px;
   width: 160px;
   height: 35px;
   font-size: 20px;
