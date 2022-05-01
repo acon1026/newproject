@@ -10,7 +10,7 @@ public class StudentScore {
 	double avg =0;
 	String rank ;
 	
-	
+	public StudentScore() {}
 	public StudentScore(String score_num, int snumber, int kor, int eng, int math, int total, double avg) {
 		super();
 		this.score_num = score_num;
@@ -72,6 +72,15 @@ public class StudentScore {
 	public String toString() {
 		return "[snumber= " + snumber + ", kor= " + kor + ", eng= " + eng
 				+ ", math= " + math + ", total= " + total + ", avg= " + avg + ",rank="+rank+"]";
+	}
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+	public void setMath(int math) {
+		this.math = math;
 	}
 	
 	

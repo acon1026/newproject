@@ -117,6 +117,8 @@
           <%
 //Student s = (Student)request.getAttribute("s");
 StudentScore sc = (StudentScore) request.getAttribute("score");
+//int tmptotal = sc.getMath()+sc.getEng()+sc.getKor();
+//double tmpavg= tmptotal/3.0;
 %>
           <tbody>
             <tr>
@@ -124,8 +126,8 @@ StudentScore sc = (StudentScore) request.getAttribute("score");
               <td class="td2"><%=sc.getKor()%></td>
               <td class="td3"><%=sc.getEng()%></td>
               <td class="td4"><%=sc.getMath()%></td>
-              <td class="td5"><%=sc.getTotal()%></td>
-              <td class="td6"><%=sc.getAvg()%></td>
+              <td class="td5"><%=sc.getKor()+sc.getEng()+sc.getMath()%></td>
+              <td class="td6"><%=(sc.getKor()+sc.getEng()+sc.getMath())/3.0%></td>
             </tr>    <%  %>
           </tbody>
         </table>

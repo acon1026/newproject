@@ -77,7 +77,10 @@ for(int i=0;  i<list.size();  i++)  {
 	%>
 	<%for(int j=0; j<list1.size(); j++){
 		StudentScore ss = list1.get(j);
-	if(s.getSnumber() == ss.getSnumber()){ %>
+	if(s.getSnumber() == ss.getSnumber()){ 
+		int totaltmp = ss.getKor()+ ss.getEng()+ss.getMath();
+	    double tmpavg =    (totaltmp/3.0);  
+	    double tmp =     (Math.round(tmpavg*10)/10.0);        %>
 	<tbody>
 	<tr>
 	<td class="td2"><%= s.getSnumber() %></td>
@@ -88,8 +91,8 @@ for(int i=0;  i<list.size();  i++)  {
 	<td class="td2"><%= ss.getKor() %></td>
 	<td class="td2"><%= ss.getEng() %></td>
 	<td class="td2"><%= ss.getMath() %></td>
-	<td class="td2"><%= ss.getTotal() %></td>
-	<td class="td2"><%= ss.getAvg() %></td>
+	<td class="td2"><%= ss.getKor()+ ss.getEng()+ss.getMath() %></td>
+	<td class="td2"><%= tmp  %></td>
 	<td class="td2"><%= ss.getScore_num() %></td>
 	</tr>
 	</tbody>	

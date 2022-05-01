@@ -125,6 +125,8 @@
           <%  ArrayList<StudentScore> list  =(ArrayList<StudentScore>) request.getAttribute("list");
 				for(int i=0;  i<list.size();  i++)  {
 					StudentScore s =  list.get(i); 
+					//int tmptotal = s.getMath()+s.getEng()+s.getKor();
+					//double tmpavg= tmptotal/3.0;
 			%>
             <tr>
               <td class="td1"><%= s.getSnumber() %> </td>

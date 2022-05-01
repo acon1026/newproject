@@ -121,6 +121,11 @@ public ArrayList<StudentScore> table(){
 public void updatetable(String score_num, int snumber, int kor, int eng, int math) {
 	
 	try {
+		StudentScore s = new StudentScore();
+		
+		s.setKor(kor);
+		s.setEng(eng);
+		s.setMath(math);
 		dbCon();
 		String sql="update Score_info set snumber=?,kor=?,eng=?,math=? where score_num=?";
 		
