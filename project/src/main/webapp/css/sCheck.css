@@ -6,8 +6,7 @@
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  color:red;
+  vertical-align: baseline;  
 }
 
 div {
@@ -53,6 +52,12 @@ a {
 #header h1 a {
   float: left;
   margin-top: 5px;
+}
+
+#header .wrapper1 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
 }
 
 #header .top {
@@ -102,8 +107,7 @@ a {
   transition: ease 1s;
 }
 
-#contents {
-  overflow: hidden;
+#contents {  
   width: 1320px;
   height: 720px;
   margin: 0 auto;
@@ -126,13 +130,18 @@ a {
   width: 1200px;
   height: 600px;
   margin: 0 auto;
+  overflow: auto;
+}
+
+#contents .wrapper2 .p1{
+  margin-top: 15px;
 }
 
 #contents .wrapper2::after {
   width: 1200px;
   height: 600px;
   content: "";
-  background: url('../image/school.jpg');
+  background: url('../html/img/school.jpg');
   background-size: cover;
   position: absolute;
   top: 0;
@@ -198,6 +207,12 @@ a {
   margin: auto;
 }
 
+#footer .wrapper4 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
+}
+
 #footer .emblem {
   float: left;
   margin-top: 15px;
@@ -233,6 +248,7 @@ a {
   margin-top: 10px;
   border-collapse: collapse;
   border-spacing: 0;
+  text-align: center;
 }
 
 .tbl td {
@@ -257,27 +273,27 @@ a {
 }
 
 .tbl .th1 {
-  width: 150px;
+  width: 200px;
 }
 
 .tbl .th2 {
-  width: 250px;
+  width: 200px;
 }
 
 .tbl .th3 {
-  width: 350px;
+  width: 200px;
 }
 
 .tbl .th4 {
-  width: 150px;
+  width: 200px;
 }
 
 .tbl .th5 {
-  width: 150px;
+  width: 200px;
 }
 
 .tbl .th6 {
-  width: 150px;
+  width: 200px;
 }
 
 .main .p1 {

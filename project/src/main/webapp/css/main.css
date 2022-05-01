@@ -135,10 +135,11 @@ a {
 }
 
 #contents .wrapper2 iframe{
-	width: 800px;
-	height: 500px;
+	width: 1000px;
+	height: 600px;
 	margin-top: 60px;
-	margin-left: 260px;
+	margin-left: 300px;
+	overflow: auto;
 }
 
 #contents .wrapper2::after {

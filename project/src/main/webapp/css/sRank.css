@@ -128,13 +128,18 @@ a {
   width: 1200px;
   height: 600px;
   margin: 0 auto;
+  overflow: auto;
+}
+
+#contents .wrapper2 .p1{
+  margin-top: 15px;
 }
 
 #contents .wrapper2::after {
   width: 1200px;
   height: 600px;
   content: "";
-  background: url('/project/html/img/school.jpg');
+  background: url('../html/img/school.jpg');
   background-size: cover;
   position: absolute;
   top: 0;
@@ -201,6 +206,12 @@ a {
   margin: auto;
 }
 
+#footer .wrapper4 img{
+  width: 180px;
+  height: 70px;
+  margin-top: -20px;
+}
+
 #footer .emblem {
   float: left;
   margin-top: 15px;
@@ -236,6 +247,7 @@ a {
   margin-top: 10px;
   border-collapse: collapse;
   border-spacing: 0;
+  text-align: center;
 }
 
 .tbl td {
@@ -260,7 +272,7 @@ a {
 }
 
 .tbl .th1 {
-  width: 100px;
+  width: 200px;
 }
 
 .tbl .th2 {
@@ -268,23 +280,23 @@ a {
 }
 
 .tbl .th3 {
-  width: 300px;
+  width: 200px;
 }
 
 .tbl .th4 {
-  width: 150px;
+  width: 200px;
 }
 
 .tbl .th5 {
-  width: 150px;
+  width: 200px;
 }
 
 .tbl .th6 {
-  width: 150px;
+  width: 200px;
 }
 
 .tbl .th7 {
-  width: 150px;
+  width: 200px;
 }
 
 .main .p1 {
