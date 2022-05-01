@@ -19,7 +19,7 @@
     }
 
     .tbl {
-      margin-top: 15px;
+      margin-top: 10px;
       border-collapse: collapse;
       border-spacing: 0;
       text-align: center;
@@ -31,14 +31,14 @@
 
     .tbl td {
       border: 1px solid black;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 700;
       overflow: hidden;
       padding: 10px 5px;
       text-align: center;
       vertical-align: top;
       word-break: normal;
-      height: 20px;
+      height: 18px;
       line-height: 35px;
     }
 
